@@ -94,7 +94,7 @@ async def post_to_channels(client, callback_query):
         genres = movie_details.get('genres', 'N/A')
         plot = movie_details.get('plot', 'N/A')
         year = movie_details.get('year', 'N/A')
-        hindi_plot = await get_English(plot)
+        English_plot = await get_English(plot)
         
         custom_link = f"https://t.me/{temp.U_NAME}?start=getfile-{file_name.replace(' ', '-').lower()}"
         reply_markup = InlineKeyboardMarkup([
